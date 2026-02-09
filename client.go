@@ -30,14 +30,32 @@ func (g *BlackboxGenerator) validateConfig() error {
 	if g.config.IGGY == "" {
 		return errors.New("invalid config: IGGY not defined")
 	}
+	if g.config.JSSRC == "" {
+		return errors.New("invalid config: JSSRC not defined")
+	}
+	if g.config.BBOUT == "" {
+		return errors.New("invalid config: BBOUT not defined (io_bbout_element_id)")
+	}
+	if g.config.SVRTIME == "" {
+		return errors.New("invalid config: SVRTIME not defined")
+	}
+	if g.config.Token == "" {
+		return errors.New("invalid config: Token not defined")
+	}
 	if g.config.TokenKey == "" {
 		return errors.New("invalid config: Token key not defined (FLRTD or JSTOKEN)")
 	}
-	if g.config.DESKey == [8]byte{} {
-		return errors.New("invalid config: DES key not defined")
+	if g.config.SUAGT == "" {
+		return errors.New("invalid config: SUAGT not defined")
+	}
+	if g.config.HACCLNG == "" {
+		return errors.New("invalid config: HACCLNG not defined")
 	}
 	if g.config.JSVER == "" {
 		return errors.New("invalid config: JSVER not defined")
+	}
+	if g.config.DESKey == [8]byte{} {
+		return errors.New("invalid config: DES key not defined")
 	}
 	return nil
 }
