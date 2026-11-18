@@ -226,3 +226,7 @@ The `IntegrationType` field tells the blackbox how the script was integrated on 
 | `Function` | `"function"` | `ioGetBlackbox()` was called explicitly to retrieve the blackbox |
 
 For GlobalE checkout flows (e.g. Pokemon Center DE/NZ/AU), the integration type is `Form`.
+
+## Maintained by status403
+
+iovationsnare-go is built and maintained by [status403](https://status403.com/?utm_source=github&utm_medium=referral&utm_campaign=iovationsnare-go), a software house specializing in reverse engineering and anti-bot protected targets. The method behind reconstructions like this one is written up in [Reverse Engineering Anti-Bot JavaScript: Deobfuscation and VM Analysis](https://status403.com/blog/reverse-engineering-antibot-javascript?utm_source=github&utm_medium=referral&utm_campaign=iovationsnare-go).
